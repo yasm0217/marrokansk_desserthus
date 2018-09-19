@@ -1,0 +1,149 @@
+[
+    {
+        "kategori": "bryllupskager",
+        "navn": "Den Blå By",
+        "pris": "3000,-",
+        "beskrivelse": "Celebrate the best day of your life, with a cake inspired by the blue city in the north, Chefchaouen.",
+        "billede": "denblåby"
+  },
+    {
+        "kategori": "bryllupskager",
+        "navn": "Golden Grace",
+        "pris": "2000,-",
+        "beskrivelse": "Our french inspired vanilla wedding cake, is a bestseller and a classic speciality, presented to you by our moroccan Conditor and Artist Hassan Hijab.",
+        "billede": "goldengrace"
+  },
+    {
+        "kategori": "bryllupskager",
+        "navn": "The Royal Wedding",
+        "pris": "8000,-",
+        "beskrivelse": "The grandest and finest wedding cake of the house, designed by Najima Hassan. With both chocolate, vanilla and strawberry layers we present you with The Royal Wedding Cake.",
+        "billede": "theroyalwedding"
+  },
+    {
+        "kategori": "fødselsdagskager",
+        "navn": "Pink Pillow Cake",
+        "pris": "1000,-",
+        "beskrivelse": "Enjoy your big day amongst friends and family with our notorious pillowcake.",
+        "billede": "pinkpillowcake"
+  },
+    {
+        "kategori": "fødselsdagskager",
+        "navn": "Blue Pearl",
+        "pris": "1800,-",
+        "beskrivelse": "With patterns and style inspired by european bakery we give you a beautiful cake with a twist of North Africa.",
+        "billede": "bluepearl"
+  },
+    {
+        "kategori": "fødselsdagskager",
+        "navn": "Casablanca",
+        "pris": "1500,-",
+        "beskrivelse": "A traditional and oriental saltcaramel cake for your celebration.",
+        "billede": "casablanca"
+  },
+    {
+        "kategori": "selskabskager",
+        "navn": "Ocean Flower Collection",
+        "pris": "500,-",
+        "beskrivelse": "A collection of delicious and pretty chocolate cupcakes, topped with buttercream of your choosing in beautiful design.",
+        "billede": "oceanflowercollection"
+  },
+    {
+        "kategori": "selskabskager",
+        "navn": "Oriental Sweets",
+        "pris": "300,-",
+        "beskrivelse": "Sweet and simple cookies for your houseparty.",
+        "billede": "orientalsweets"
+  },
+    {
+        "kategori": "selskabskager",
+        "navn": "Moroccan Macarons",
+        "pris": "300,-",
+        "beskrivelse": "Our new macarons collection combined with chocolate or vanilla mousse for your celebration or your get together.",
+        "billede": "moroccanmacarons"
+  },
+    {
+        "kategori": "herognu",
+        "navn": "Southern Snakebread",
+        "pris": "300,-",
+        "beskrivelse": "Enjoy our house speciality topped with cinnamon, made with love (served with fresh tea).",
+        "billede": "southernsnakebread"
+  },
+    {
+        "kategori": "herognu",
+        "navn": "Pancake Fusion",
+        "pris": "129,-",
+        "beskrivelse": "Pancakes made from a moroccan kitchen topped with berries of your choosing (served with fresh tea).",
+        "billede": "pancakefusion"
+  },
+    {
+        "kategori": "herognu",
+        "navn": "Sahara Sandcake",
+        "pris": "200,-",
+        "beskrivelse": "A traditional and simple serving for your sweet tooth (served with fresh tea).",
+        "billede": "saharasandcake"
+  },
+    {
+        "kategori": "herognu",
+        "navn": "Dream Dates",
+        "pris": "100,-",
+        "beskrivelse": "A world known delicatesse from the moroccan kitchen. Fresh dates combined with nuts of your choosing and topped with honey or syrup of your choosing.",
+        "billede": "dreamdates"
+  },
+    {
+        "kategori": "herognu",
+        "navn": "Kaab El Ghazal",
+        "pris": "80,-",
+        "beskrivelse": "Famously known for it's presence at any moroccan wedding, we give you freshly made Kaab El Ghazal (served with fresh tea).",
+        "billede": "kaabelghazal"
+  },
+    {
+        "kategori": "herognu",
+        "navn": "Breakfast Plate",
+        "pris": "100,-",
+        "beskrivelse": "Enjoy moroccan made pancakes served with three kinds of berries, honey and syrup.",
+        "billede": "breakfastplate"
+  },
+    {
+        "kategori": "herognu",
+        "navn": "Great Company Collection",
+        "pris": "300,-",
+        "beskrivelse": "Get comfortable in our house with your family and friends and share our collection of party delicasies (served with fresh tea).",
+        "billede": "greatcompanycollection"
+  },
+    {
+        "kategori": "herognu",
+        "navn": "Fruit Plate",
+        "pris": "80,-",
+        "beskrivelse": "Fresh cut oranges topped with cinnamon for a light snack or dessert.",
+        "billede": "fruitplate"
+  },
+    {
+        "kategori": "herognu",
+        "navn": "Honey Cakes",
+        "pris": "100,-",
+        "beskrivelse": "Known in every corner of Morocco, we give you our famous honey cakes, topped with pistachios, when you want it extra sweet.",
+        "billede": "honeycakes"
+  },
+    {
+        "kategori": "drikkevarer",
+        "navn": "Traditional Tea",
+        "pris": "50,-",
+        "beskrivelse": "With a combination of mint and green tea we present you with our traditional Moroccan Tea.",
+        "billede": "traditionaltea"
+  },
+    {
+        "kategori": "drikkevarer",
+        "navn": "Avocado Smoothie",
+        "pris": "40,-",
+        "beskrivelse": "Served to weddings and get togethers, try our luxurious and rich avocado smoothie combined with vanilla and pistachio.",
+        "billede": "avocadosmoothie"
+  },
+    {
+        "kategori": "drikkevarer",
+        "navn": "Moroccan Mojito",
+        "pris": "50,-",
+        "beskrivelse": "A virgin refreshment with an extra hint of Africa.",
+        "billede": "moroccanmojito"
+  }
+]

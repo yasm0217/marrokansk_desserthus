@@ -1,0 +1,38 @@
+a {
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+}
+
+.menu-item {
+    font-family: 'Playfair Display', serif;
+    font-size: 19px;
+
+
+}
+
+
+header {
+    max-width: 100vw;
+
+}
+
+img {
+    max-width: 50%;
+}
+
+
+body {
+    background: rgba(255, 192, 192, 0.46);
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+
+}
+
+.retContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5vw;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}

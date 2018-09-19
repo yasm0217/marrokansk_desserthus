@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moroccan Cake Factory</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+
+</head>
+<header>
+    <img src="marrokansk_dessert_logo5.png">
+</header>
+
+<body>
+
+    <section id="modal">
+
+        <div id="modal-content">
+
+            <h2 class="modal-navn"></h2>
+            <img src="" alt="" class="modal-billede">
+            <p class="beskrivelse" data-beskrivelse></p>
+            <p>Menu</p>
+        </div>
+    </section>
+
+
+    <header>
+        <h1></h1>
+        <nav>
+            <button class="menu-item" data-kategori="bryllupskager">Bryllupskager</button>
+            <button class="menu-item" data-kategori="fødselsdagskager">Fødselsdagskager</button>
+            <button class="menu-item" data-kategori="selskabskager">Selskabskager</button>
+            <button class="menu-item" data-kategori="herognu">Her og Nu</button>
+            <button class="menu-item" data-kategori="drikkevarer">Drikkevarer</button>
+
+        </nav>
+    </header>
+
+    <main class="retContainer"> </main>
+
+    <template class="retTemplate">
+        <article class="ret">
+            <h2 class="overskrift" data-navn></h2>
+            <img class="billede" data-billede src="" alt="">
+            <p class="beskrivelse" data-beskrivelse></p>
+            <p>Pris: <span class="pris" data-pris></span></p>
+        </article>
+    </template>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", hentJson);
+
+        let dest = document.querySelector(".retContainer"),
+            retter, retFilter = "alle";
+
+        async function hentJson() {
+            let jsonData = await fetch("menu.json");
+            retter = await jsonData.json();
+            visRetter();
+        }
+
+        document.querySelectorAll(".menu-item").forEach(knap => {
+            knap.addEventListener("click", retFiltrering)
+        });
+
+        function retFiltrering() {
+            dest.textContent = "";
+            retFilter = this.getAttribute("data-kategori");
+            visRetter();
+        }
+
+        function visRetter() {
+            let temp = document.querySelector(".retTemplate");
+            let dest = document.querySelector(".retContainer");
+            document.querySelector("header h1").textContent = retFilter;
+            retter.forEach(ret => {
+                if (ret.kategori == retFilter || retFilter == "alle") {
+                    let klon = temp.cloneNode(true).content;
+                    klon.querySelector("[data-navn]").textContent = ret.navn;
+                    klon.querySelector("[data-billede]").src = "images/" + ret.billede + ".jpg";
+                    klon.querySelector("img").addEventListener("click", () => {
+                        visModal(ret);
+                    });
+                    klon.querySelector("[data-beskrivelse]").textContent = ret.beskrivelse;
+                    klon.querySelector("[data-pris]").textContent = ret.pris;
+                    dest.appendChild(klon);
+                }
+            });
+        }
+
+        function visModal(retten) {
+            modal.classList.add("vis");
+            modal.querySelector(".modal-navn").textContent = retten.navn;
+            modal.querySelector(".modal-billede").src = "imgs/small/" + retten.billede + "-sm.jpg";
+            modal.querySelector(".modal-navn").alt = "Photo af" + retten.navn;
+            modal.querySelector(".beskrivelse").textContent = retten.beskrivelse;
+            modal.querySelector("button").addEventListener("click", skjulmodal);
+
+        }
+
+        function skjulmodal() {
+            modal.classList.remove("vis");
+            //window.scrollTo(0)
+        }
+    </script>
+
+    <footer>
+    </footer>
+
+</body>
+
+</html>
